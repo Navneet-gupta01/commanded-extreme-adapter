@@ -37,7 +37,8 @@ defmodule Commanded.EventStore.Adapters.Extreme.Mixfile do
   defp deps do
     [
       {:commanded, "~> 0.18", runtime: Mix.env() == :test},
-      {:extreme, "~> 0.13"},
+      {:extreme,
+       git: "https://github.com/Navneet-gupta01/extreme.git", branch: "elixir-1.8.0_support"},
       {:hackney, "~> 1.15", override: true},
       {:httpoison, "~> 1.2 or ~> 1.3"},
 
